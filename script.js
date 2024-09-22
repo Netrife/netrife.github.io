@@ -1,20 +1,22 @@
 const roles = [
     "Knight", "Mage", "Realm God", "Rogue", "Archer", "Paladin", "Blacksmith", "Healer", "Assassin", "Saint", "Tamer",
     "Necromancer", "Emperor", "King", "Queen", "Unknown", "Death Knight", "Farmer", "Demon King", "Swordman", "Magic Swordman",
-    "Martial Artist", "Trader", "Archmage", "Slave", "Chef", "Gun Slinger", "Shaman"
+    "Martial Artist", "Trader", "Archmage", "Slave", "Chef", "Gun Slinger", "Shaman", "Femboy", "Engineer"
 ];
 
 const races = [
     "Human", "Elf", "Dwarf", "Orc", "Beast", "Dark Elf", "Dragon", "Half Dragon", "Half Elf", "Demon",
     "Werewolf", "Succubus", "Divine Being", "Feline", "Frogman", "Lizardman", "Slime", "Jawir",
-    "Sarkaz", "Liberi", "Sankta", "Deer", "Fishman", "Unknown", "Vampire", "Elemental", "God"
+    "Sarkaz", "Liberi", "Sankta", "Deer", "Fishman", "Unknown", "Vampire", "Elemental", "Half God", "God"
 ];
 
 const regions = [
-    "LowRess Kingdom", "Liberia", "Great Forest", "Heavenhold", "Asgardia", "Ruins of Ancient Ferde Empire", "Cope-Varde United Nations"
+    "LowRess Kingdom", "Liberia", "Great Forest", "Heavenhold", "Asgardia", "Ruins of Ancient Zenryushen Empire", "Basthi-Varde United Nations"
 ];
 
 const roleSkills = {
+    "Femboy": ["Trap Charms", "You Are Gay", "Feminine Body shape", "Lust", "Energy Drain"],
+    "Engineer": ["Creative Skill", "Create Skill", "Genius Inovation Mode", "Dimentional Tool Box"],
     "Knight": ["Sword Mastery", "Shield Mastery", "Mounted Combat", "War Cry", "Heavy Armor", "Tactical Strategy", "Battle Charge", "Shield Bash", "Combat Reflexes", "Defensive Stance", "Sword Block", "Battlefield Awareness", "Parry", "Shield Slam", "Armor Reinforcement", "Toughness", "Sword Precision", "Holy Vow", "Defender's Resolve", "Battle Endurance"],
     "Mage": ["Fire Magic", "Water Magic", "Earth Magic", "Wind Magic", "Lightning Magic", "Arcane Magic", "Teleportation", "Time Manipulation", "Illusion", "Energy Bolt", "Mana Control", "Dark Magic", "Summon Elementals", "Meteor Shower", "Magic Shield", "Mana Drain", "Arcane Blast", "Magic Ward", "Mana Burst", "Elemental Mastery"],
     "Rogue": ["Stealth", "Sneak Attack", "Lockpicking", "Pickpocketing", "Backstab", "Evasion", "Poison Crafting", "Agility Boost", "Silent Step", "Ambush", "Trap Detection", "Shadow Step", "Dagger Mastery", "Dual Wielding", "Smoke Bomb", "Shadow Meld", "Thievery", "Quick Escape", "Decoy", "Cloak of Shadows"],
@@ -71,7 +73,10 @@ const titles = {
     "Chef": ["Ultimate Chef", "Gourmet King", "Master of Flavors", "Grand Cook", "Sovereign of Taste", "Anomaly", "Noob"],
     "Gun Slinger": ["Sharpshooter", "Bullet Storm", "Master Marksman", "Gun Master", "Sniper Elite", "Anomaly", "Noob"],
     "Shaman": ["Spirit Walker", "Totem Lord", "Elemental Conduit", "Mystic of the Wild", "Keeper of the Spirits", "Anomaly", "Noob"],
-    "World God": ["Creator of Realms", "God", "Unknown Creature", "Master of Heaven", "Newbie"]
+    "World God": ["Creator of Realms", "God", "Unknown Creature", "Master of Heaven", "Anomaly", "Noob"],
+    "Femboy Hooters": ["Fuck! You're Gay!", "Trap and Femboy Lover", "Incubus(?)", "Anomaly", "Noob"],
+    "Engineer": ["Master At Arms", "Master of Engineering", "Repairer", "Genius Inovator", "Magical Hands"]
+    
 
 };
 
@@ -136,7 +141,7 @@ function submitName() {
                 (role === "Blacksmith" && race !== "Dwarf") ||
                 ["Demon King", "Saint"].includes(role)
             );
-        }
+        } 
 
         document.getElementById("inputForm").style.display = "none";
 
