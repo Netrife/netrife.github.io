@@ -1,6 +1,6 @@
 const roles = [
     "Knight", "Mage", "Realm God", "Rogue", "Archer", "Paladin", "Blacksmith", "Healer", "Assassin", "Saint", "Tamer",
-    "Necromancer", "Unknown", "Death Knight", "Farmer", "Demon King", "Swordman", "Magic Swordman",
+    "Necromancer", "Emperor", "King", "Queen", "Unknown", "Death Knight", "Farmer", "Demon King", "Swordman", "Magic Swordman",
     "Martial Artist", "Trader", "Archmage", "Slave", "Chef", "Gun Slinger", "Shaman"
 ];
 
@@ -30,6 +30,8 @@ const roleSkills = {
     "Death Knight": ["Death Blade", "Soul Drain", "Plague Strike", "Undead Mastery", "Dark Armor", "Cursed Shield", "Death Charge", "Grim Command", "Necrotic Slash", "Unholy Aura", "Corpse Explosion", "Bone Shield", "Life Steal", "Dark Pact", "Vampiric Strike", "Reaper's Touch", "Soul Reaper", "Dark Command", "Death's Advance", "Doom Strike"],
     "Farmer": ["Harvesting", "Soil Knowledge", "Crop Mastery", "Animal Husbandry", "Seed Crafting", "Irrigation Mastery", "Plowing", "Plant Growth", "Land Fertility", "Livestock Care", "Crop Rotation", "Agricultural Trade", "Farming Tools", "Pest Control", "Farm Management", "Compost Creation", "Breeding Mastery", "Crop Forecasting", "Herbology", "Barn Construction"],
     "Demon King": ["Dark Command", "Infernal Flames", "Demon Summoning", "Absolute Domination", "Demonic Aura", "Soul Corruption", "Hellfire", "Dark Rebirth", "Demon Lord's Might", "Dark Pact", "Summon Demon Hordes", "Hellstorm", "Infernal Protection", "Shadow Flame", "Doom Prophecy", "Chaos Control", "Abyssal Magic", "Soul Reaver", "Eternal Torment", "Cursed Throne"],
+    "King": ["Troops Command", "Grand Leadership", "Absolute Order", "Masculine Charm", "Brave", "Intimidation", "Light Spear", "Golden Sun Transformation", "King's Might", "Meme Throne"], 
+    "Emperor": ["Troops Command", "Grand Leadership", "Absolute Order", "Masculine Charm", "Brave", "Intimidation", "Light Sword", "Transformation Skill", "Emperor's Might", "Sigma Throne"],
     "Swordman": ["Sword Mastery", "Blade Dance", "Quick Strike", "Deflect", "Parry", "Sword Combo", "Sharp Focus", "Sword Spin", "Deadly Slash", "Sword Precision", "Sword Reflection", "Blade Guard", "Heavy Strike", "Sword Blitz", "Raging Slash", "Sword of Fury", "Rapid Slash", "Sword Counter", "Blade Crush", "Whirling Blade"],
     "Magic Swordman": ["Sword Mastery", "Elemental Blade", "Arcane Strike", "Mana Infusion", "Sword Dance", "Enchanted Weapon", "Magic Burst", "Quick Slash", "Spellblade", "Blade of Flames", "Ice Blade", "Lightning Edge", "Earth Cleave", "Wind Cutter", "Sword of Light", "Darkness Slash", "Sword Aura", "Mystic Edge", "Arcane Barrier", "Mana Shield"],
     "Martial Artist": ["Hand-to-Hand Combat", "Pressure Point Strike", "Fists of Fury", "Agility Boost", "Palm Strike", "Roundhouse Kick", "Counterattack", "Chi Focus", "Tiger Stance", "Dragon Kick", "Iron Fist", "Body Hardening", "Mental Focus", "Chi Channeling", "Flurry of Blows", "Disarm", "Sweeping Kick", "Nerve Strike", "Power Punch", "Energy Burst"],
@@ -84,7 +86,7 @@ function getRandomNumber(min, max) {
 function submitName() {
     const name = document.getElementById("nameInput").value;
 
-    if (name.toLowerCase() === "wahyu yogo" || name.toLowerCase() === "wahyuyogo" || name.toLowerCase() === "wahyu setya") {
+    if (name.toLowerCase() === "netrife" || name.toLowerCase() === "netrife" || name.toLowerCase() === "moon netrife") {
         document.getElementById("inputForm").style.display = "none";
 
         document.getElementById("charName").textContent = name;
