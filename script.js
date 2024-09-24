@@ -91,13 +91,13 @@ function getRandomNumber(min, max) {
 function submitName() {
     const name = document.getElementById("nameInput").value;
 
-    if (name.toLowerCase() === "netrife" || name.toLowerCase() === "netrife" || name.toLowerCase() === "moon netrife") {
+    if (name.toLowerCase() === "netrife" || name.toLowerCase() === "netrife" || name.toLowerCase() === "Abdulus von Fibulus") {
         document.getElementById("inputForm").style.display = "none";
 
         document.getElementById("charName").textContent = name;
         document.getElementById("charAgi").textContent = "????";
         document.getElementById("charLev").textContent = "????";
-        document.getElementById("charRole").textContent = "Creator";
+        document.getElementById("charRole").textContent = "????";
         document.getElementById("charRace").textContent = "????";
         document.getElementById("charStrength").textContent = "????";
         document.getElementById("charHealth").textContent = "????";
@@ -120,7 +120,7 @@ function submitName() {
         document.getElementById("divinePower").style.display = "none";
         document.getElementById("darkEnergy").style.display = "none";
 
-        document.getElementById("characterDisplay").style.display = "block";
+        document.getElementById("characterDisplay").style.display = "none";
     } else if (name) {
         const race = getRandomElement(races);
 
@@ -157,7 +157,7 @@ function submitName() {
         const numberOfSkills = getRandomNumber(3, 5);
 
         const skillList = document.getElementById("charSkill");
-        skillList.innerHTML = "";
+        skillList.innerHTML = "block";
 
         const availableSkills = roleSkills[role];
 
@@ -201,7 +201,7 @@ function submitName() {
         document.getElementById("charGuild").textContent = guild;
         document.getElementById("charRegion").textContent = region;
 
-        if (["Healer", "Paladin", "Saint",].includes(role)) {
+        if (["Healer", "Paladin", "Saint"].includes(role)) {
             const divinePower = getRandomNumber(50, 100);
             document.getElementById("charDivinePower").textContent = divinePower;
             document.getElementById("divinePower").style.display = "block";
@@ -213,10 +213,12 @@ function submitName() {
             document.getElementById("darkEnergy").style.display = "block";
         }
 
-        if (["World God", "Realm God"].includes(role)) {
+        if (["Realm God"].includes(role)) {
             const divinePower = getRandomNumber(1000, 100.000);
             document.getElementById("charDivinePower").textContent = divinePower;
             document.getElementById("divinePower").style.display = "block";
+        }
+    
         document.getElementById("characterDisplay").style.display = "block";
         } 
           
