@@ -157,7 +157,7 @@ function submitName() {
         const numberOfSkills = getRandomNumber(3, 5);
 
         const skillList = document.getElementById("charSkill");
-        skillList.innerHTML = "block";
+        skillList.innerHTML = "";
 
         const availableSkills = roleSkills[role];
 
@@ -219,7 +219,7 @@ function submitName() {
             document.getElementById("divinePower").style.display = "block";
         }
     
-        document.getElementById("characterDisplay").style.display = "block";
+        document.getElementById("characterDisplay").style.display = "none";
         } 
           
           else {
