@@ -11,7 +11,7 @@ const races = [
 ];
 
 const regions = [
-    "LowRess Kingdom", "Liberia", "Great Forest", "Heavenhold", "Asgardia", "Ruins of Ancient Zenryushen Empire", "Basthi-Varde United Nations"
+    "LowRess Kingdom", "Liberia", "Great Forest", "Heavenhold", "Asgardia", "Ruins of Ancient Zenryushen Empire", "Basthi-Varde United Kingdoms"
 ];
 
 const roleSkills = {
@@ -97,7 +97,7 @@ function submitName() {
         document.getElementById("charName").textContent = name;
         document.getElementById("charAgi").textContent = "????";
         document.getElementById("charLev").textContent = "????";
-        document.getElementById("charRole").textContent = "????";
+        document.getElementById("charRole").textContent = "Raja Jawa";
         document.getElementById("charRace").textContent = "????";
         document.getElementById("charStrength").textContent = "????";
         document.getElementById("charHealth").textContent = "????";
@@ -133,11 +133,12 @@ function submitName() {
             role = "Saint";
         } else if (randomChance <2) {
             role = "Realm God";
+            
         } else
             do {
                 role = getRandomElement(roles);
             } while (
-                (["Demon", "Sarkaz", "Orc"].includes(race) && ["Healer", "Paladin", "Saint"].includes(role)) ||
+                (["Demon", "Sarkaz", "Orc"].includes(race) && ["Healer", "Paladin", "Saint", "Realm God"].includes(role)) ||
                 (role === "Blacksmith" && race !== "Dwarf") ||
                 ["Demon King", "Saint"].includes(role)
             );
