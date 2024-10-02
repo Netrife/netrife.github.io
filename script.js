@@ -222,8 +222,7 @@ function submitName() {
     
         document.getElementById("characterDisplay").style.display = "none";
         } 
-          
-          else {
+
         alert("Please enter a name.");
     }
 }
