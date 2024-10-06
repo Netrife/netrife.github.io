@@ -1,17 +1,17 @@
 const roles = [
-    "Knight", "Mage", "Femboy", "Rogue", "Archer", "Paladin", "Blacksmith", "Healer", "Assassin", "Saint", "Tamer",
+    "Knight", "Mage", "Rogue", "Archer", "Paladin", "Blacksmith", "Healer", "Assassin", "Saint", "Tamer",
     "Necromancer", "Unknown", "Death Knight", "Farmer", "Demon King", "Swordman", "Magic Swordman",
     "Martial Artist", "Trader", "Archmage", "Slave", "Chef", "Gun Slinger", "Shaman"
 ];
 
 const races = [
     "Human", "Elf", "Dwarf", "Orc", "Beast", "Dark Elf", "Dragon", "Half Dragon", "Half Elf", "Demon",
-    "Werewolf", "Succubus", "Incubus", "Divine Being", "Feline", "Frogman", "Lizardman", "Slime", "Jawir",
+    "Werewolf", "Succubus", "Divine Being", "Feline", "Frogman", "Lizardman", "Slime", "Jawir",
     "Sarkaz", "Liberi", "Sankta", "Deer", "Fishman", "Unknown", "Vampire", "Elemental"
 ];
 
 const regions = [
-    "LowRess Kingdom", "Liberia", "Great Forest", "Darzak Empire", "Heavenhold"
+    "LowRess Kingdom", "Liberia", "Great Forest", "Heavenhold"
 ];
 
 const roleSkills = {
@@ -36,14 +36,13 @@ const roleSkills = {
     "Trader": ["Bartering", "Market Analysis", "Negotiation", "Wealth Accumulation", "Merchant's Eye", "Inventory Management", "Contract Drafting", "Supply Chain", "Risk Assessment", "Sales Mastery", "Trade Secrets", "Customer Rapport", "Trade Route Knowledge", "Investment Strategies", "Merchant's Luck", "Price Manipulation", "Logistics Expertise", "Market Expansion", "Haggling", "Wealth Control"],
     "Archmage": ["Ultimate Fireball", "Meteor Shower", "Elemental Mastery", "Arcane Surge", "Mystic Explosion", "Mana Mastery", "Teleportation", "Time Warp", "Mana Storm", "Reality Shatter", "Infinite Wisdom", "Arcane Barrage", "Planar Rift", "Arcane Manipulation", "Elemental Fury", "Cosmic Insight", "Eternal Flame", "Mana Explosion", "Spellsurge", "Mana Infusion"],
     "Slave": ["Endurance", "Survival Instinct", "Pain Tolerance", "Obedience", "Escape Artist", "Servitude Mastery", "Submission", "Silent Endurance", "Servant's Will", "Willpower", "Stealth Work", "Escape Plan", "Unseen Movement", "Rebellious Mind", "Survival Expert", "Hidden Talent", "Chained Strength", "Mental Resilience", "Resistance", "Hidden Strength"],
-    "Femboy": ["Endurance", "Strong Libido", "Pain Tolerance", "Submission", "Dominant", "Movements Master", "Professional Mastubator", "Beautiful Face", "Beauty Moans", "Ass clap", 
     "Gun Slinger": ["Gun Mastery", "Precision Shooting", "Rapid Fire", "Bullet Crafting", "Dual Wielding", "Long Range Shot", "Headshot", "Ricochet Shot", "Explosive Bullet", "Piercing Shot", "Steady Aim", "Trick Shot", "Reload Speed", "Rapid Reload", "Marksmanship", "Firearm Tactics", "Armor Piercing Rounds", "Blindfire", "Tactical Retreat", "Sniper Mastery"],
     "Shaman": ["Spirit Summoning", "Totem Mastery", "Healing Wave", "Ancestral Guidance", "Lightning Strike", "Earthquake", "Spirit Walk", "Fire Totem", "Water Shield", "Wind Rush", "Nature's Fury", "Totemic Recall", "Hex", "Storm Call", "Thunder Clap", "Feral Spirit", "Spirit Bond", "Tribal Knowledge", "Cleansing Ritual", "Spirit Control"],
     "Chef": ["Cooking", "Ingredient Sourcing", "Flavor Mastery", "Knife Skills", "Heat Control", "Herb Knowledge", "Food Presentation", "Recipe Creation", "Gourmet Crafting", "Culinary Expertise", "Meal Preparation", "Food Preservation", "Baking Mastery", "Herb Infusion", "Ingredient Substitution", "Food Safety", "Multitasking", "Culinary Innovation", "Taste Testing", "Plating Expertise"]
 };
 
-const ranks = ["F", "E", "D", "C", "B", "A", "S", "SS"];
-const guilds = ["PSHT", "RHODES", "Silverthorn", "Dragonshade", "Tempest", "Shadowspire"];
+const ranks = ["F", "E", "D", "C", "B", "A", "S"];
+const guilds = ["PSHT", "RHODES", "Silverthorn", "Dragonshade", "Shadowspire"];
 const titles = {
     "Knight": ["Champion of Light", "Guardian of the Realm", "Master of Arms", "Sword Guardian", "Defender of the Weak", "Anomaly", "Noob"],
     "Mage": ["Master of Elements", "Arcane Scholar", "Stormcaller", "Elemental Weaver", "Mystic of the Arcane", "Anomaly", "Noob"],
@@ -66,7 +65,6 @@ const titles = {
     "Trader": ["Master Merchant", "Goldfinger", "Wealth Accumulator", "Lord of Trade", "Market King", "Anomaly", "Noob"],
     "Archmage": ["Archmage Supreme", "Master of Magic", "Eternal Scholar", "Cosmic Magus", "Arcane Sovereign", "Anomaly", "Noob"],
     "Slave": ["Survivor", "Endurer of Chains", "Liberated Soul", "Unseen Warrior", "Silent Strength", "Anomaly", "Noob"],
-    "Femboy": ["Gay", "Cum Receiver", "Trap Creature", "Beautiful Boy", "Hung", "Noob"],
     "Chef": ["Ultimate Chef", "Gourmet King", "Master of Flavors", "Grand Cook", "Sovereign of Taste", "Anomaly", "Noob"],
     "Gun Slinger": ["Sharpshooter", "Bullet Storm", "Master Marksman", "Gun Master", "Sniper Elite", "Anomaly", "Noob"],
     "Shaman": ["Spirit Walker", "Totem Lord", "Elemental Conduit", "Mystic of the Wild", "Keeper of the Spirits", "Anomaly", "Noob"]
@@ -90,13 +88,13 @@ function submitName() {
         document.getElementById("charName").textContent = name;
         document.getElementById("charAgi").textContent = "????";
         document.getElementById("charLev").textContent = "????";
-        document.getElementById("charRole").textContent = "Hengker Jawa";
-        document.getElementById("charRace").textContent = "Jawa";
+        document.getElementById("charRole").textContent = "Creator";
+        document.getElementById("charRace").textContent = "????";
         document.getElementById("charStrength").textContent = "????";
         document.getElementById("charHealth").textContent = "????";
         document.getElementById("charMana").textContent = "????";
         document.getElementById("charGuild").textContent = "????";
-        document.getElementById("charRegion").textContent = "Jawa";
+        document.getElementById("charRegion").textContent = "????";
 
         const skillList = document.getElementById("charSkill");
         skillList.innerHTML = "";
