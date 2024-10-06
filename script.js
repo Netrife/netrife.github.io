@@ -66,7 +66,7 @@ const titles = {
     "Trader": ["Master Merchant", "Goldfinger", "Wealth Accumulator", "Lord of Trade", "Market King", "Anomaly", "Noob"],
     "Archmage": ["Archmage Supreme", "Master of Magic", "Eternal Scholar", "Cosmic Magus", "Arcane Sovereign", "Anomaly", "Noob"],
     "Slave": ["Survivor", "Endurer of Chains", "Liberated Soul", "Unseen Warrior", "Silent Strength", "Anomaly", "Noob"],
-    "Femboy": ["Gay", "Cum Receiver", "Trap Creature", "Beautiful Boy", "Hung", "Noob",
+    "Femboy": ["Gay", "Cum Receiver", "Trap Creature", "Beautiful Boy", "Hung", "Noob"],
     "Chef": ["Ultimate Chef", "Gourmet King", "Master of Flavors", "Grand Cook", "Sovereign of Taste", "Anomaly", "Noob"],
     "Gun Slinger": ["Sharpshooter", "Bullet Storm", "Master Marksman", "Gun Master", "Sniper Elite", "Anomaly", "Noob"],
     "Shaman": ["Spirit Walker", "Totem Lord", "Elemental Conduit", "Mystic of the Wild", "Keeper of the Spirits", "Anomaly", "Noob"]
@@ -88,15 +88,15 @@ function submitName() {
         document.getElementById("inputForm").style.display = "none";
 
         document.getElementById("charName").textContent = name;
-        document.getElementById("charAgi").textContent = "∞";
-        document.getElementById("charLev").textContent = "∞";
-        document.getElementById("charRole").textContent = "Creator/Hengker Jawa";
+        document.getElementById("charAgi").textContent = "????";
+        document.getElementById("charLev").textContent = "????";
+        document.getElementById("charRole").textContent = "Hengker Jawa";
         document.getElementById("charRace").textContent = "Jawa";
-        document.getElementById("charStrength").textContent = "∞";
-        document.getElementById("charHealth").textContent = "∞";
-        document.getElementById("charMana").textContent = "∞";
-        document.getElementById("charGuild").textContent = "Tempest";
-        document.getElementById("charRegion").textContent = "Federation of Jura Tempest";
+        document.getElementById("charStrength").textContent = "????";
+        document.getElementById("charHealth").textContent = "????";
+        document.getElementById("charMana").textContent = "????";
+        document.getElementById("charGuild").textContent = "????";
+        document.getElementById("charRegion").textContent = "Jawa";
 
         const skillList = document.getElementById("charSkill");
         skillList.innerHTML = "";
