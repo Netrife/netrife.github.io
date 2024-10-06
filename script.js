@@ -42,8 +42,8 @@ const roleSkills = {
     "Chef": ["Cooking", "Ingredient Sourcing", "Flavor Mastery", "Knife Skills", "Heat Control", "Herb Knowledge", "Food Presentation", "Recipe Creation", "Gourmet Crafting", "Culinary Expertise", "Meal Preparation", "Food Preservation", "Baking Mastery", "Herb Infusion", "Ingredient Substitution", "Food Safety", "Multitasking", "Culinary Innovation", "Taste Testing", "Plating Expertise"]
 };
 
-const ranks = ["F", "E", "D", "C", "B", "A", "S"];
-const guilds = ["PSHT", "RHODES", "Silverthorn", "Dragonshade", "Shadowspire"];
+const ranks = ["F", "E", "D", "C", "B", "A", "S", "SS"];
+const guilds = ["PSHT", "RHODES", "Silverthorn", "Dragonshade", "Tempest", "Shadowspire"];
 const titles = {
     "Knight": ["Champion of Light", "Guardian of the Realm", "Master of Arms", "Sword Guardian", "Defender of the Weak", "Anomaly", "Noob"],
     "Mage": ["Master of Elements", "Arcane Scholar", "Stormcaller", "Elemental Weaver", "Mystic of the Arcane", "Anomaly", "Noob"],
@@ -66,6 +66,7 @@ const titles = {
     "Trader": ["Master Merchant", "Goldfinger", "Wealth Accumulator", "Lord of Trade", "Market King", "Anomaly", "Noob"],
     "Archmage": ["Archmage Supreme", "Master of Magic", "Eternal Scholar", "Cosmic Magus", "Arcane Sovereign", "Anomaly", "Noob"],
     "Slave": ["Survivor", "Endurer of Chains", "Liberated Soul", "Unseen Warrior", "Silent Strength", "Anomaly", "Noob"],
+    "Femboy": ["Gay", "Cum Receiver", "Trap Creature", "Beautiful Boy", "Hung", "Noob",
     "Chef": ["Ultimate Chef", "Gourmet King", "Master of Flavors", "Grand Cook", "Sovereign of Taste", "Anomaly", "Noob"],
     "Gun Slinger": ["Sharpshooter", "Bullet Storm", "Master Marksman", "Gun Master", "Sniper Elite", "Anomaly", "Noob"],
     "Shaman": ["Spirit Walker", "Totem Lord", "Elemental Conduit", "Mystic of the Wild", "Keeper of the Spirits", "Anomaly", "Noob"]
@@ -83,19 +84,19 @@ function getRandomNumber(min, max) {
 function submitName() {
     const name = document.getElementById("nameInput").value;
 
-    if (name.toLowerCase() === "wahyu yogo" || name.toLowerCase() === "wahyuyogo" || name.toLowerCase() === "wahyu setya") {
+    if (name.toLowerCase() === "netrife" || name.toLowerCase() === "netrife" || name.toLowerCase() === "Abdul Bejir") {
         document.getElementById("inputForm").style.display = "none";
 
         document.getElementById("charName").textContent = name;
-        document.getElementById("charAgi").textContent = "????";
-        document.getElementById("charLev").textContent = "????";
-        document.getElementById("charRole").textContent = "Creator";
-        document.getElementById("charRace").textContent = "????";
-        document.getElementById("charStrength").textContent = "????";
-        document.getElementById("charHealth").textContent = "????";
-        document.getElementById("charMana").textContent = "????";
-        document.getElementById("charGuild").textContent = "????";
-        document.getElementById("charRegion").textContent = "????";
+        document.getElementById("charAgi").textContent = "∞";
+        document.getElementById("charLev").textContent = "∞";
+        document.getElementById("charRole").textContent = "Creator/Hengker Jawa";
+        document.getElementById("charRace").textContent = "Jawa";
+        document.getElementById("charStrength").textContent = "∞";
+        document.getElementById("charHealth").textContent = "∞";
+        document.getElementById("charMana").textContent = "∞";
+        document.getElementById("charGuild").textContent = "Tempest";
+        document.getElementById("charRegion").textContent = "Federation of Jura Tempest";
 
         const skillList = document.getElementById("charSkill");
         skillList.innerHTML = "";
