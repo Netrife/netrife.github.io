@@ -82,7 +82,7 @@ function getRandomNumber(min, max) {
 function submitName() {
     const name = document.getElementById("nameInput").value;
 
-    if (name.toLowerCase() === "Abdullah Munfiq" || name.toLowerCase() === "abdullahmunfiq" || name.toLowerCase() === "Abdullah Munfiq") {
+    if (name.toLowerCase() === "Abdull" || name.toLowerCase() === "abdullahmunfiq" || name.toLowerCase() === "Abdullah Munfiq") {
         document.getElementById("inputForm").style.display = "none";
 
         document.getElementById("charName").textContent = name;
