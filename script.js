@@ -11,7 +11,7 @@ const races = [
 ];
 
 const regions = [
-    "LowRess Kingdom", "Liberia", "Great Forest", "Heavenhold"
+    "LowRess Kingdom", "Liberia", "Great Forest", "Heavenhold", "Hj.Slamet Empire"
 ];
 
 const roleSkills = {
@@ -41,8 +41,8 @@ const roleSkills = {
     "Chef": ["Cooking", "Ingredient Sourcing", "Flavor Mastery", "Knife Skills", "Heat Control", "Herb Knowledge", "Food Presentation", "Recipe Creation", "Gourmet Crafting", "Culinary Expertise", "Meal Preparation", "Food Preservation", "Baking Mastery", "Herb Infusion", "Ingredient Substitution", "Food Safety", "Multitasking", "Culinary Innovation", "Taste Testing", "Plating Expertise"]
 };
 
-const ranks = ["F", "E", "D", "C", "B", "A", "S"];
-const guilds = ["PSHT", "RHODES", "Silverthorn", "Dragonshade", "Shadowspire"];
+const ranks = ["F", "E", "D", "C", "B", "A", "S", "S+"];
+const guilds = ["PSHT", "RHODES", "Silverthorn", "Dragonshade", "Shadowspire", "IKSPI", "V.O.C"];
 const titles = {
     "Knight": ["Champion of Light", "Guardian of the Realm", "Master of Arms", "Sword Guardian", "Defender of the Weak", "Anomaly", "Noob"],
     "Mage": ["Master of Elements", "Arcane Scholar", "Stormcaller", "Elemental Weaver", "Mystic of the Arcane", "Anomaly", "Noob"],
@@ -82,7 +82,7 @@ function getRandomNumber(min, max) {
 function submitName() {
     const name = document.getElementById("nameInput").value;
 
-    if (name.toLowerCase() === "wahyu yogo" || name.toLowerCase() === "wahyuyogo" || name.toLowerCase() === "wahyu setya") {
+    if (name.toLowerCase() === "nishigami rangga" || name.toLowerCase() === "nishigamirangga" || name.toLowerCase() === "Abdullah Munfiq") {
         document.getElementById("inputForm").style.display = "none";
 
         document.getElementById("charName").textContent = name;
