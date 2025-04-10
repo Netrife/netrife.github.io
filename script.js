@@ -11,7 +11,7 @@ const races = [
 ];
 
 const regions = [
-    "LowRess Kingdom", "Liberia", "Great Forest", "Heavenhold", "Hj.Slamet Empire"
+    "LowRess Kingdom", "Liberia", "Great Forest", "Heavenhold", "Hj.Slamet Empire", "Republik Indonesia Serikat"
 ];
 
 const roleSkills = {
@@ -41,8 +41,8 @@ const roleSkills = {
     "Chef": ["Cooking", "Ingredient Sourcing", "Flavor Mastery", "Knife Skills", "Heat Control", "Herb Knowledge", "Food Presentation", "Recipe Creation", "Gourmet Crafting", "Culinary Expertise", "Meal Preparation", "Food Preservation", "Baking Mastery", "Herb Infusion", "Ingredient Substitution", "Food Safety", "Multitasking", "Culinary Innovation", "Taste Testing", "Plating Expertise"]
 };
 
-const ranks = ["F", "E", "D", "C", "B", "A", "S", "S+"];
-const guilds = ["PSHT", "RHODES", "Silverthorn", "Dragonshade", "Shadowspire", "IKSPI", "V.O.C"];
+const ranks = ["F", "E", "D", "C", "B", "A", "S", "S+", "U"];
+const guilds = ["PSHT", "RHODES", "Silverthorn", "Dragonshade", "Shadowspire", "IKSPI", "V.O.C", "The Lightborn", "Illuminati", "Freemason", "Luciferia"];
 const titles = {
     "Knight": ["Champion of Light", "Guardian of the Realm", "Master of Arms", "Sword Guardian", "Defender of the Weak", "Anomaly", "Noob"],
     "Mage": ["Master of Elements", "Arcane Scholar", "Stormcaller", "Elemental Weaver", "Mystic of the Arcane", "Anomaly", "Noob"],
@@ -82,13 +82,13 @@ function getRandomNumber(min, max) {
 function submitName() {
     const name = document.getElementById("nameInput").value;
 
-    if (name.toLowerCase() === "Nishigami Rangga" || name.toLowerCase() === "abdullahmunfiq" || name.toLowerCase() === "Nishigami Rangga") {
+    if (name.toLowerCase() === "nishigamirangga" || name.toLowerCase() === "abdullahmunfiq" || name.toLowerCase() === "nishigami rangga") {
         document.getElementById("inputForm").style.display = "none";
 
         document.getElementById("charName").textContent = name;
         document.getElementById("charAgi").textContent = "????";
         document.getElementById("charLev").textContent = "????";
-        document.getElementById("charRole").textContent = "Creator";
+        document.getElementById("charRole").textContent = "The Creator";
         document.getElementById("charRace").textContent = "????";
         document.getElementById("charStrength").textContent = "????";
         document.getElementById("charHealth").textContent = "????";
@@ -103,12 +103,12 @@ function submitName() {
         skillList.appendChild(listItem);
 
         const titleList = document.getElementById("charTitle");
-        titleList.innerHTML = "";
+        titleList.innerHTML = "The Creator of Aldarea";
         const titleItem = document.createElement("li");
         titleItem.textContent = "???? (????)";
         titleList.appendChild(titleItem);
 
-        document.getElementById("divinePower").style.display = "none";
+        document.getElementById("divinePower").style.display = "∞";
         document.getElementById("darkEnergy").style.display = "none";
 
         document.getElementById("characterDisplay").style.display = "block";
