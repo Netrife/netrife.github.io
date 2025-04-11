@@ -108,7 +108,7 @@ function submitName() {
         titleItem.textContent = "???? (????)";
         titleList.appendChild(titleItem);
 
-        document.getElementById("divinePower").style.display = "∞";
+        document.getElementById("divinePower").style.display = "none";
         document.getElementById("darkEnergy").style.display = "none";
 
         document.getElementById("characterDisplay").style.display = "block";
@@ -134,9 +134,9 @@ function submitName() {
 
         document.getElementById("inputForm").style.display = "none";
 
-        const strength = getRandomNumber(1, 100);
-        const health = getRandomNumber(25, 100);
-        const mana = getRandomNumber(1, 100);
+        const strength = getRandomNumber(5, 100);
+        const health = getRandomNumber(1, 100);
+        const mana = getRandomNumber(10, 100);
         const agi = getRandomNumber(1, 100);
         const lev = getRandomNumber(1, 100);
         const guild = getRandomElement(guilds);
@@ -191,13 +191,13 @@ function submitName() {
         document.getElementById("charRegion").textContent = region;
 
         if (["Healer", "Paladin", "Saint"].includes(role)) {
-            const divinePower = getRandomNumber(50, 100);
+            const divinePower = getRandomNumber(50, 150);
             document.getElementById("charDivinePower").textContent = divinePower;
             document.getElementById("divinePower").style.display = "block";
         }
 
         if (["Necromancer", "Unknown", "Death Knight", "Demon King"].includes(role) || race === "Demon") {
-            const darkEnergy = getRandomNumber(50, 100);
+            const darkEnergy = getRandomNumber(50, 150);
             document.getElementById("charDarkEnergy").textContent = darkEnergy;
             document.getElementById("darkEnergy").style.display = "block";
         }
