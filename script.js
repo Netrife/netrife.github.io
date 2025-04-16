@@ -11,7 +11,7 @@ const races = [
 ];
 
 const regions = [
-    "LowRess Kingdom", "Liberia", "Great Forest", "Heavenhold", "Hj.Slamet Empire", "Republik Indonesia Serikat"
+    "LowRess Kingdom", "Liberia", "Tian Yixue Dynasty", "Great Forest", "Heavenhold", "Devatadvipa", "Norfolk Island", "Atlantis", "Cadia Riverlands", "Abyssal Crack", "Drubovsky Dukedom"
 ];
 
 const roleSkills = {
@@ -103,7 +103,7 @@ function submitName() {
         skillList.appendChild(listItem);
 
         const titleList = document.getElementById("charTitle");
-        titleList.innerHTML = "The Creator of Aldarea";
+        titleList.innerHTML = "Guardians of Aldarea";
         const titleItem = document.createElement("li");
         titleItem.textContent = "???? (????)";
         titleList.appendChild(titleItem);
