@@ -92,6 +92,7 @@ function submitName() {
         document.getElementById("charRace").textContent = "????";
         document.getElementById("charStrength").textContent = "????";
         document.getElementById("charHealth").textContent = "????";
+        document.getElementById("charInt").textContent= "????";
         document.getElementById("charMana").textContent = "????";
         document.getElementById("charGuild").textContent = "????";
         document.getElementById("charRegion").textContent = "????";
@@ -136,6 +137,7 @@ function submitName() {
 
         const strength = getRandomNumber(5, 100);
         const health = getRandomNumber(1, 100);
+        const int = getRandonNumber(1, 200);
         const mana = getRandomNumber(10, 100);
         const agi = getRandomNumber(1, 100);
         const lev = getRandomNumber(1, 100);
@@ -186,6 +188,7 @@ function submitName() {
         document.getElementById("charRace").textContent = race;
         document.getElementById("charStrength").textContent = strength;
         document.getElementById("charHealth").textContent = health;
+        document.getElementById("charInt").textContent = int;
         document.getElementById("charMana").textContent = mana;
         document.getElementById("charGuild").textContent = guild;
         document.getElementById("charRegion").textContent = region;
